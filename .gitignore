@@ -1,7 +1,53 @@
 .env
-target/
+.env.*
+*.local
+*.log
+*.tmp
+*.temp
 *.dump
+
+# Java / Maven / Gradle
+/backend/target/
+/backend/.classpath
+/backend/.project
+/backend/.settings/
+/backend/.idea/
+/backend/*.iml
+/backend/.factorypath
+/backend/.metadata/
+
+# Node / frontend
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.vite/
+/frontend/.cache/
+/frontend/.parcel-cache/
+/frontend/npm-debug.log*
+/frontend/yarn-error.log*
+/frontend/pnpm-debug.log*
+
+# IDE / editor files
 .idea/
+.vscode/
 *.iml
-node_modules/
-dist/
+*.swp
+*.swo
+*.orig
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Docker / local runtime files
+*.pid
+*.sock
+
+# Local build artifacts
+coverage/
+build/
+out/
+
+# Optional repo-local credentials or secrets
+secrets/
+*.pem
+*.key

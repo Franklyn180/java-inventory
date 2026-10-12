@@ -5,6 +5,7 @@
 *.tmp
 *.temp
 *.dump
+.env.example
 
 # Java / Maven / Gradle
 /backend/target/
